@@ -1,0 +1,5 @@
+from astropy.cosmology import Planck18 as cosmo
+
+z = 0.05  # Example
+DL = cosmo.luminosity_distance(z).to('Mpc')
+print("Luminosity Distance:", DL)
